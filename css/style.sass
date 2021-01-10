@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Oswald:wght@300;400&display=swap')
+
+@import "reset"
+@import "vars"
+@import "mixins"
+// @import "keyframes"
+
+html
+	font-family: 'Oswald', 'Open Sans', sans-serif
+	color: $mainTextColor
+
+h1
+	+font(48px, 71px, 400)
+	letter-spacing: 0.01em
+	// text-transform: uppercase
+
+h2
+	+font(30px, 44px, 400)
+	text-transform: uppercase
+	letter-spacing: 0.05em
+
+h3
+	+font(24px, 36px, 400)
+	text-transform: uppercase
+	letter-spacing: 0.05em
+
+h4
+	+font(18px, 27px, 400)
+	text-transform: uppercase
+	letter-spacing: 0.05em
+
+p
+	font-family: 'Open Sans', sans-serif
+	+font(18px, 22px, 300)
+
+text
+	font-family: 'Open Sans', sans-serif
+	+font(14px, 19px, 400)
+
+a
+	font-family: 'Open Sans', sans-serif
+	+font(14px, 19px, 600)
+
+.button
+	letter-spacing: 0.05em
+	color: $headerColor
+	// width: 160px
+	// height: 51px
+	padding: 15px 40px
+	line-height: 51px
+	border: 1px solid $headerColor
+	transition: all ease 0.5s
+
+	&:hover
+		color: $mainColor
+		border: 1px solid $mainColor
+		background-color: $headerColor
+
+.container
+	max-width: 1110px
+	margin: 0 auto
+	position: relative
+	z-index: 1
+
+.header
+	position: relative
+	height: 800px
+	color: $headerColor
+	background: url("../img/background.jpg") no-repeat
+	background-position: center bottom
+	background-size: cover
+	// z-index: -2
+
+	&__top
+		height: 80px
+		background: $headerBack
+		display: flex
+		align-items: center
+		position: relative
+		z-index: 1
+
+	&__logo
+
+		position: absolute
+		left: 40px
+		top: 15px
+		// width: 100%
+		height: 100%
+		object-fit: cover
+		object-position: bottom
+		// z-index: -1
+
+	&__items
+		display: flex
+		align-items: center
+		justify-content: center
+		column-gap: 26px
+		position: relative
+		z-index: 1
+
+	&__link
+		color: $headerColor
+		cursor: pointer
+
+		&:hover
+			color: yellow
+
+	&__main
+		height: 720px
+		position: relative
+
+	&__shape
+		position: absolute
+		background: $headerBack
+		left: 0
+		top: -202px
+		width: 444px
+		height: 100%
+		z-index: -1
+
+	&__caption
+		margin: 202px 0 40px 190px
+
+	&__text
+		margin-left: 190px
+		margin-bottom: 40px
+
+	&__button
+		margin-left: 190px
+
+.block
+	&__top
+		display: flex
+		align-items: center
+		justify-content: start
+	&__heading
+		margin-right: 40px
+
+.projects
+	margin-top: 150px
+
+	&__top
+		height: 55px
+		display: flex
+		align-items: center
+		justify-content: space-between
+		margin-bottom: 65px
+
+	&__left
+
+	&__caption
+
+	&__right
+		display: flex
+		align-items: center
+		justify-content: end
+
+	&__btn
+
+	&__items
+		width: 100%
+		height: 400px
+		display: flex
+		justify-content: space-between
+
+	&__item
+		width: 540px
+		height: 400px
+		position: relative
+		// margin: 255px 0 0 255px
+
+		&-description
+			position: absolute
+			background-color: $headerColor
+			width: 250px
+			height: 110px
+			padding: 20px 0 0 25px
+			right: 35px
+			bottom: 35px
+
+		&-caption
+			margin-bottom: 14px
+
+		&-text
+			+font(14px, 19px, 300)
+			width: 200px
+
+	&__img
+		width: 540px
+		height: 400px
+		position: absolute
+		left: 0
+		top: 0
+		z-index: -1
+
+.products
+	margin-top: 150px
+
+	&__top
+
+		margin-bottom: 70px
+
+	&__caption
+
+	&__middle
+		display: flex
+		align-items: center
+		justify-content: center
+		column-gap: 47px
+
+	&__subtitle
+		margin-bottom: 55px
+		cursor: pointer
+
+		&.active
+			color: $mainColor
+			border-bottom: 2px solid $mainColor
+
+	&__items
+		width: 100%
+		height: 300px
+		display: flex
+		justify-content: space-between
+
+	&__item
+		width: 350px
+		height: 300px
+		position: relative
+
+		&-description
+			position: absolute
+			background-color: $mainColor
+			width: 265px
+			height: 86px
+			padding-left: 15px
+			display: flex
+			align-items: center
+			right: 0
+			bottom: 15px
+
+		&-caption
+
+			color: $headerColor
+			width: 208px
+
+		&-text
+			+font(14px, 19px, 300)
+			width: 200px
+
+	&__img
+		width: 350px
+		height: 300px
+		position: absolute
+		left: 0
+		top: 0
+		z-index: -1
+
+.rent
+	margin-top: 108px
+	&__top
+		margin-bottom: 40px
+
+	&__main
+		display: flex
+		align-items: center
+		justify-content: space-between
+
+	&__text
+		width: 350px
+
+	&__block
+		border: 3px solid $mainColor
+		width: 665px
+		padding: 42px 30px
+		position: relative
+
+		&-caption
+			margin-bottom: 45px
+
+		&-buttons
+			position: absolute
+			top: 30px
+			right: 30px
+			display: flex
+			justify-content: end
+
+		&__btn
+
+		&-box
+			display: flex
+			align-items: center
+			justify-content: space-between
+
+		&-img
+			width: 255px
+			height: 250px
+
+		&-description
+			width: 290px
+
+		&-title
+			+font(16px, 24px, 400)
+			letter-spacing: 0.05em
+			font-family: 'Oswald', sans-serif
+			text-transform: uppercase
+			margin-bottom: 30px
+
+		&-items
+			list-style: disc
+			padding-left: 20px
+		&-item
+			+font(14px, 19px, 300)
+			font-family: 'Open Sans', sans-serif
+			padding-bottom: 24px
