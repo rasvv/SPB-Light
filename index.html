@@ -12,7 +12,7 @@
 		<header class="header">
 			<div class="header__top">
 				<a href="#" class="header__logo"><img src="img/Logo.svg" alt="Logo"></a>
-				<div class="container">
+				<nav class="header__menu container">
 					<ul class="header__items">
 						<li><a class="header__link" href="#">О компании</a></li>
 						<li><a class="header__link" href="#">Портфолио</a></li>
@@ -20,8 +20,9 @@
 						<li><a class="header__link" href="#">Сервис</a></li>
 						<li><a class="header__link" href="#">Контакты</a></li>
 					</ul>
-				</div>
+				</nav>
 			</div>
+
 			<section class="header__main container">
 				<div class="header__shape"></div>
 				<h1 class="header__caption">Светотехническое оборудование <br>в Петербурге</h1>
@@ -37,13 +38,13 @@
 		<section class="projects container">
 			<div class="projects__top">
 				<div class="projects__left block__top">
-					<img src="img/decor-heading.svg" alt="ico" class="projects__heading block__heading">
 					<h2 class="projects__title block__title">Наши проекты</h2>
 				</div>
 
 				<div class="projects__right">
-					<a href="#" class="projects__btn"><img src="img/slider-menu__button-left.svg" alt="Prev"></a>
-					<a href="#" class="projects__btn"><img src="img/slider-menu__button-right.svg" alt="Next"></a>
+					<a href="#" class="projects__btn block-btn">
+						<</a> <a href="#" class="projects__btn block-btn">>
+					</a>
 				</div>
 			</div>
 			<div class="projects__items">
@@ -71,7 +72,6 @@
 
 		<section class="products container">
 			<div class="products__top block__top">
-				<img src="img/decor-heading.svg" alt="ico" class="products__heading block__heading">
 				<h2 class="products__title block__title">Каталог продукции</h2>
 			</div>
 			<div class="products__middle">
@@ -105,7 +105,6 @@
 
 		<section class="rent container">
 			<div class="rent__top block__top">
-				<img src="img/decor-heading.svg" alt="ico" class="rent__heading block__heading">
 				<h2 class="rent__title block__title">Аренда оборудования</h2>
 			</div>
 			<div class="rent__main">
@@ -117,8 +116,9 @@
 				<section class="rent__block">
 					<h4 class="rent__block-caption">Новое оборудование, предоставляемое в аренду:</h4>
 					<div class="rent__block-buttons">
-						<a href="#" class="rent__block-btn"><img src="img/slider-menu__button-left.svg" alt="Prev"></a>
-						<a href="#" class="rent__block-btn"><img src="img/slider-menu__button-right.svg" alt="Next"></a>
+						<a href="#" class="rent__block-btn block-btn">
+							<</a> <a href="#" class="rent__block-btn block-btn">>
+						</a>
 					</div>
 					<div class="rent__block-box">
 						<img src="img/rent-product3.png" alt="rent" class="rent__block-img">
@@ -138,6 +138,79 @@
 
 		</section>
 
+		<section class="news container">
+			<div class="news__top block__top">
+				<h2 class="news__title block__title">Новости</h2>
+			</div>
+			<a href="#" class="news__button button__invert">все новости</a>
+			<section class="news__big">
+				<img src="img/news1.jpg" alt="Img" class="news__big-img">
+				<h4 class="news__big-title">Семинар Milos</h4>
+				<p class="news__big-date">27.01.2019</p>
+				<p class="news__big-text">
+					Наши сотрудники прошли последний семинар от компании Milos. <br>
+					Они получили новый объем знаний, который позволит нашей компании заниматься оборудованием не только
+					мероприятий, но производственных помещений.
+				</p>
+				<a href="#" class="news__big-link">Читать полностью...</a>
+			</section>
+
+			<section class="news__small">
+				<a href="#" class="news__small-link">
+					<h4 class="news__small-title">Выставка Prolight+Sound NAMM Russia 2016</h4>
+				</a>
+				<p class="news__small-text">
+					30 контрактов, тысячи восторженных посетителей...
+				</p>
+				<img src="img/news2.jpg" alt="Img" class="news__small-img">
+				<p class="news__small-date">27.01.2019</p>
+			</section>
+
+			<section class="news__small">
+				<a href="#" class="news__small-link">
+					<h4 class="news__small-title">Семинар <br>Robe</h4>
+				</a>
+				<p class="news__small-text">
+					30 января 2017 года наши сотрудники побывали в Берлине..
+				</p>
+				<img src="img/news3.jpg" alt="Img" class="news__small-img">
+				<p class="news__small-date">27.01.2019</p>
+			</section>
+		</section>
+
+		<footer class="footer ">
+			<div class="container">
+				<div class="footer__top">
+					<h4 class="footer__phone">(812) 710-80-25</h4>
+					<p class="footer__adress text">
+						191180, Санкт-Петербург, Набережная реки Фонтанки, 90, корпус 1
+					</p>
+					<p class="footer__mail text">mail@translight.ru</p>
+				</div>
+				<div class="footer__line"></div>
+				<nav class="footer__middle">
+					<ul class="footer__menu text">
+						<li><a class="footer__link text" href="#">О компании</a></li>
+						<li><a class="footer__link text" href="#">Каталог</a></li>
+						<li><a class="footer__link text" href="#">Наши проекты</a></li>
+						<li><a class="footer__link text" href="#">Новости</a></li>
+						<li><a class="footer__link text" href="#">Аренда</a></li>
+						<li><a class="footer__link text" href="#">Сервисное обслуживание</a></li>
+					</ul>
+				</nav>
+				<div class="footer__line"></div>
+				<div class="footer__buttom">
+					<p class="footer__copy text">
+						© 2019 ЗАО «Транслайт». Все права защищены.
+					</p>
+					<p class="footer__design text">
+						Разработка и дизайн - D-e-n.ru
+					</p>
+
+				</div>
+			</div>
+
+		</footer>
 
 		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/main.js"></script> -->
